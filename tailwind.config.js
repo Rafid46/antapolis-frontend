@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        geist: ["Geist", "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "primary-color": "#41B06E",
       },
     },
   },

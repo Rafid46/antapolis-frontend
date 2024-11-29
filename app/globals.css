@@ -2,26 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.custom_button_style {
+  @apply text-sm font-semibold h-[40px] px-8 border-none shadow-none text-white bg-primary-color;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.custom_hover:hover {
+  background-color: #35915a !important;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: "Geist", sans-serif !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.ant-notification .ant-notification-notice-wrapper {
+  border: 1px solid rgb(224, 224, 224);
+}
+
+.ant-form-item {
+  margin-bottom: 10px !important;
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  font-size: 12px !important;
+  margin-top: 2px !important;
 }

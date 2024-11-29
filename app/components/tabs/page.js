@@ -63,7 +63,7 @@ const Page = ({ categoryList, animalList }) => {
   return (
     <div>
       <div className="flex items-center flex-wrap gap-2 mb-4">
-        {categoryList.length > 0 ? (
+        {categoryList?.length > 0 ? (
           categoryList.map((category) => (
             <Chip
               key={category._id}
@@ -78,7 +78,7 @@ const Page = ({ categoryList, animalList }) => {
       </div>
       <div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-sm">
-          {filteredAnimals.length > 0 ? (
+          {filteredAnimals?.length > 0 ? (
             filteredAnimals.map((animal) => (
               <div
                 key={animal._id}
